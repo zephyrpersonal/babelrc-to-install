@@ -8,7 +8,7 @@ var fs = require('fs'),
 
 fs.readFile('.babelrc', 'utf-8', function (err, data) {
   if (err) {
-    chalk.red(err.message)
+    console.error(chalk.red(err.message))
   } else {
     var config = JSON.parse(data);
     while (pkgs.length) {
