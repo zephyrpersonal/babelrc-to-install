@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var fs = require('fs'),
   chalk = require('chalk'),
   exec = require('child_process').exec,
@@ -6,7 +8,7 @@ var fs = require('fs'),
 
 fs.readFile('.babelrc', 'utf-8', function (err, data) {
   if (err) {
-    console.error(chalk.red(err.message))
+    chalk.red(err.message)
   } else {
     var config = JSON.parse(data);
     while (pkgs.length) {
