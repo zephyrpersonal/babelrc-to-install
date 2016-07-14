@@ -1,6 +1,6 @@
 {
   "name": "babelrc-to-install",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "install babel and presets or plugins by .babelrc",
   "main": "index.js",
   "scripts": {
